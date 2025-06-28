@@ -20,15 +20,15 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="sticky top-0 z-50 glass-effect border-b border-coffee-brown-200">
+    <nav className="sticky top-0 z-50 glass-effect border-b border-portland-green-200">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-coffee-brown-500 rounded-full flex items-center justify-center">
+            <div className="w-10 h-10 bg-portland-green-600 rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-lg">C</span>
             </div>
-            <span className="font-serif text-xl font-bold text-coffee-brown-800">
+            <span className="font-serif text-xl font-bold text-portland-green-800">
               Cricket Cafe
             </span>
           </Link>
@@ -39,10 +39,10 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-medium transition-colors hover:text-coffee-brown-600 ${
+                className={`text-sm font-medium transition-colors hover:text-portland-green-600 ${
                   isActive(item.path)
-                    ? "text-coffee-brown-600 border-b-2 border-coffee-brown-600"
-                    : "text-coffee-brown-700"
+                    ? "text-portland-green-600 border-b-2 border-portland-green-600"
+                    : "text-portland-green-700"
                 }`}
               >
                 {item.label}
@@ -54,7 +54,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-4">
             <a
               href="tel:+15035551234"
-              className="hidden sm:flex items-center space-x-2 text-coffee-brown-700 hover:text-coffee-brown-600 transition-colors"
+              className="hidden sm:flex items-center space-x-2 text-portland-green-700 hover:text-portland-green-600 transition-colors"
             >
               <Phone size={16} />
               <span className="text-sm font-medium">(503) 555-1234</span>
@@ -76,8 +76,8 @@ const Navbar = () => {
                       onClick={() => setIsOpen(false)}
                       className={`text-lg font-medium py-2 px-4 rounded-lg transition-colors ${
                         isActive(item.path)
-                          ? "bg-coffee-brown-100 text-coffee-brown-800"
-                          : "text-coffee-brown-700 hover:bg-coffee-brown-50"
+                          ? "bg-portland-green-100 text-portland-green-800"
+                          : "text-portland-green-700 hover:bg-portland-green-50"
                       }`}
                     >
                       {item.label}
@@ -86,7 +86,7 @@ const Navbar = () => {
                   <div className="border-t pt-4">
                     <a
                       href="tel:+15035551234"
-                      className="flex items-center space-x-2 text-coffee-brown-700 py-2 px-4"
+                      className="flex items-center space-x-2 text-portland-green-700 py-2 px-4"
                     >
                       <Phone size={16} />
                       <span>(503) 555-1234</span>
